@@ -5,6 +5,11 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+
+html {
+    scroll-behavior: smooth;
+}
+
 :root{
     --base-color: white;
     --text-color: black;
@@ -15,6 +20,7 @@
     --gradient-bottom: linear-gradient(to top, #6146fc, #00ff55);
     --decal-color: #fc4686;
     --decal-color-inverted: #ff8800;
+    --coding: "images/"
     
    
 }
@@ -30,12 +36,6 @@
     --decal-color-inverted: #fc4686;
     
 }
-
-html {
-    scroll-behavior: smooth;
-}
-
-
 
 #theme-switch{
     height: 40px;
@@ -83,6 +83,7 @@ svg {
 #theme-switch svg:last-child{
     display: none;
 }
+
 
 .darkmode #theme-switch svg:first-child{
     display: none;
@@ -556,8 +557,73 @@ background-color: var(--decal-color-inverted);
     background-size: cover;
     position: relative;
     color: #fff;
+    perspective: 1000px;
 
 }
+
+.volunteering-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.skills__card:hover .volunteering-inner{
+transform: rotateY(180deg);
+
+}
+
+.volunteering-front, .volunteering-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.volunteering-back{
+    transform: rotateY(180deg);
+}
+
+
+
+.education-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.skills__card:hover .education-inner{
+transform: rotateY(180deg);
+
+}
+
+.education-front, .education-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.education-back{
+    transform: rotateY(180deg);
+}
+
+
 
 .skills__card:nth-child(2){
    margin: 1rem;
