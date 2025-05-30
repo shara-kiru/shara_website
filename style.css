@@ -15,7 +15,7 @@ html {
     --text-color: black;
     --fill-color: lightseagreen;
     --fill-color-toggle: #bb77ff;
-    --gradient: linear-gradient(to right,#ff8800, #fc4686, #7808f8);
+    --gradient: linear-gradient(to left,#ff8800, #fc4686, #7808f8);
     --gradient-top: linear-gradient(to top, #fc4686 45%, #7808f8);
     --gradient-bottom: linear-gradient(to top, #ff8800 10%, #fc4686);
     --decal-color: #fc4686;
@@ -28,7 +28,7 @@ html {
     --text-color: white;
     --fill-color: #bb77ff;
     --fill-color-toggle: lightseagreen;
-    --gradient: linear-gradient(to right, red, yellow, green);
+    --gradient: linear-gradient(to left, red 0.5%, yellow, green);
     --gradient-top: linear-gradient(to top, yellow, green);
     --gradient-bottom: linear-gradient(to top, red, yellow);
     --decal-color: #ff8800;
