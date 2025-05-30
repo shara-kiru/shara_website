@@ -182,7 +182,7 @@ svg {
     border: none;
     outline: none;
     border-radius: 4px;
-    background: var(--decal-color);
+    background: var(--decal-color-inverted);
     color: #fff;
     font-size: 1.4rem;
     cursor: pointer; 
@@ -250,7 +250,7 @@ svg {
 
 
 .button:hover, .open-button:hover{
-    background: var(--decal-color-inverted);
+    background: var(--decal-color);
     color:#fff;
     transition: all 0.3s ease;
 }
