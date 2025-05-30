@@ -20,7 +20,6 @@ html {
     --gradient-bottom: linear-gradient(to top, #6146fc, #00ff55);
     --decal-color: #fc4686;
     --decal-color-inverted: #ff8800;
-    --coding: "images/"
     
    
 }
@@ -85,12 +84,31 @@ svg {
 }
 
 
-.darkmode #theme-switch svg:first-child{
+.darkmode #theme-switch svg:first-child {
     display: none;
 }
 
 .darkmode #theme-switch svg:last-child{
     display: block;
+}
+
+#pic_dark{
+    display: none;
+}
+#pic_light{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+}
+.darkmode #pic_light{
+    display: none;
+}
+
+.darkmode #pic_dark{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -460,12 +478,12 @@ width: 100%;
     text-align: center;
    }
 
-   #main__img{
-    height: 80%;
-    width: 80%;
+   #pic_light, #pic_dark{
+    height: 100%;
+    width: 100%;
    }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:959px){
     .main__container{
         display: grid;
         grid-template-columns: auto;
@@ -478,7 +496,6 @@ width: 100%;
 
 .main__content {
     text-align: center;
-    margin-bottom: 4rem;
 }
 
 
