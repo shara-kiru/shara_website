@@ -16,8 +16,8 @@ html {
     --fill-color: lightseagreen;
     --fill-color-toggle: #bb77ff;
     --gradient: linear-gradient(to right,#ff8800, #fc4686, #7808f8);
-    --gradient-top: linear-gradient(to top, #fc4686 40%, #ff8800);
-    --gradient-bottom: linear-gradient(to top, #6146fc, #00ff55);
+    --gradient-top: linear-gradient(to top, #fc4686 45%, #7808f8);
+    --gradient-bottom: linear-gradient(to top, #ff8800 10%, #fc4686);
     --decal-color: #fc4686;
     --decal-color-inverted: #ff8800;
     
